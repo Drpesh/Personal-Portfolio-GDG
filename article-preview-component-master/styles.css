@@ -1,0 +1,219 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Fraunces:opsz,wght@9..144,700&family=Hanken+Grotesk:wght@500;700;800&family=Lexend+Deca&family=Manrope:wght@500;700&family=Montserrat:wght@500;700&family=Open+Sans&family=Poppins:wght@300;400;500&family=Raleway:wght@400;700&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Manrope;
+  font-size: 13px;
+}
+
+body {
+  background-color: hsl(210, 46%, 95%);
+  height: 100vh;
+  width: 100%;
+}
+
+.hero {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-direction: column;
+  margin: 5em 3em;
+  border-radius: 8px;
+  background-color: white;
+  box-shadow: 10px 10px 100px hsl(212, 23%, 69%);
+}
+
+.heroimg > img {
+  height: 13em;
+  width: 100%;
+  border-radius: 8px 8px 0 0;
+}
+
+.herotxt {
+  height: 18em;
+  text-align: left;
+  margin: 1em;
+}
+
+h3 {
+  font-size: 14px;
+  font-weight: 700;
+  color: rgba(0, 0, 0, 0.7);
+  margin-top: 1em;
+}
+
+p {
+  font-size: 12px;
+  font-weight: 500;
+  color: rgba(0, 0, 0, 0.7);
+  margin: 1em 0;
+}
+
+.avater {
+  border-radius: 50%;
+  height: 3em;
+}
+
+#avater {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 1em;
+  margin-top: 2em;
+}
+
+.avat {
+  display: flex;
+  gap: 1em;
+}
+
+.avatername > p {
+  margin: 0;
+}
+
+.mich {
+  font-weight: 700;
+}
+
+
+@media screen and (min-width: 1024px) {
+  .hero {
+    flex-direction: row;
+  margin: 10em 20em;
+  height: 20em;
+  }
+
+  .heroimg > img {
+    height: 20em;
+    width: 20em;
+    border-radius: 8px 0 0 8px;
+  }
+
+  
+.herotxt {
+  margin: 2em;
+}
+
+h3 {
+  font-size: 16px;
+  margin-top: 1em;
+}
+
+p {
+  font-size: 14px;
+  font-weight: 500;
+  margin: 2em 0;
+}
+
+#avater {
+  gap: 2em;
+  margin-top: 2em;
+  justify-content: space-between;
+}
+}
+
+.btn-cssbuttons {
+  background-color: hsl(212, 23%, 69%);
+  position: relative;
+  padding: 16px 32px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1;
+  color: white;
+  border: none;
+  outline: none;
+  overflow: hidden;
+  cursor: pointer;
+  filter: drop-shadow(0 2px 8px rgba(39, 94, 254, 0.32));
+  transition: 0.3s cubic-bezier(0.215, 0.61, 0.355, 1);
+  border-radius: 50%;
+  height: 3em;
+  width: 3em;
+ }
+ 
+ .btn-cssbuttons::before {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  z-index: -1;
+  height: 3em;
+  width: 3em;
+  background-color: hsl(212, 23%, 69%);
+  border-radius: 50%;
+  transition: 0.3s cubic-bezier(0.215, 0.61, 0.355, 1);
+ }
+ 
+ .btn-cssbuttons span,
+ .btn-cssbuttons span span {
+  display: inline-flex;
+  vertical-align: middle;
+  transition: 0.3s cubic-bezier(0.215, 0.61, 0.355, 1);
+ }
+ 
+ .btn-cssbuttons span {
+  transition-delay: 0.05s;
+ }
+ 
+ .btn-cssbuttons span:first-child {
+  padding-right: 7px;
+ }
+ 
+ .btn-cssbuttons span span {
+  margin-left: 8px;
+  transition-delay: 0.1s;
+ }
+ 
+ .btn-cssbuttons ul {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  display: flex;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  transform: translateY(-50%);
+ }
+ 
+ .btn-cssbuttons ul li {
+  flex: 1;
+ }
+ 
+ .btn-cssbuttons ul li a {
+  display: inline-flex;
+  vertical-align: middle;
+  transform: translateY(55px);
+  transition: 0.3s cubic-bezier(0.215, 0.61, 0.355, 1);
+ }
+ 
+ .btn-cssbuttons ul li a:hover {
+  opacity: 0.5;
+ }
+ 
+ .btn-cssbuttons:hover::before {
+  transform: scale(1.2);
+ }
+ 
+ .btn-cssbuttons:hover span,
+ .btn-cssbuttons:hover span span {
+  transform: translateY(-55px);
+ }
+ 
+ .btn-cssbuttons:hover ul li a {
+  transform: translateY(0);
+ }
+ 
+ .btn-cssbuttons:hover ul li:nth-child(1) a {
+  transition-delay: 0.15s;
+ }
+ 
+ .btn-cssbuttons:hover ul li:nth-child(2) a {
+  transition-delay: 0.2s;
+ }
+ 
+ .btn-cssbuttons:hover ul li:nth-child(3) a {
+  transition-delay: 0.25s;
+ }

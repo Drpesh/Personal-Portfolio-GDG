@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Fraunces:opsz,wght@9..144,700&family=Hanken+Grotesk:wght@500;700;800&family=Lexend+Deca&family=Montserrat:wght@500;700&family=Poppins:wght@300;400;500&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.color {
+  color:  hsl(252, 100%, 67%);
+  color: hsl(241, 81%, 54%);
+  color: hsla(256, 72%, 46%, 1);
+  color: hsla(241, 72%, 46%, 0);
+  color: hsl(0, 0%, 100%);
+  color: hsl(221, 100%, 96%);
+  color: hsl(241, 100%, 89%);
+ color: hsl(224, 30%, 27%);
+}
+
+body {
+  background-color: hsl(0, 0%, 100%);
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  background-color:hsl(0, 0%, 100%);
+  box-shadow: 10px 10px 10px hsl(241, 100%, 89%);
+  height: 300px;
+  width: 450px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  font-family: Fraunces;
+}
+
+.result {
+  background-color: hsl(241, 81%, 54%);
+  border-radius: 10px;
+  margin-left: 0;
+  height: 300px;
+  width: 225px;
+  text-align: center;
+  color: hsl(0, 0%, 100%);
+  padding: 20px;
+  font-size: 14px;
+  font-weight: lighter;
+}
+
+.summary {
+  height: 300px;
+  width: 225px;
+  text-align: left;
+  padding: 20px;
+  font-size: 14px;
+  font-weight: lighter;
+}
+
+.circle {
+  height: 120px;
+  width: 120px;
+  background-image: linear-gradient(hsl(241, 81%, 54%), hsl(252, 100%, 67%));
+  border-radius: 50%;
+  margin-left: 33px;
+  display: block;
+  justify-content: center;
+  align-content: center;
+  flex-direction: row;
+}
+
+h1 {
+  
+}
+
+h3 {
+  margin: 20px;
+}
+
+h4 {
+  margin-bottom: 20px;
+}
+.summaryh4, span {
+  color: hsl(224, 30%, 27%);
+}
+
+span {
+  align-items: right;
+}
+
+.reaction {
+  background-color: rgba(255,85,85,0.1);
+  border-radius: 5px;
+  margin-bottom: 10px;
+  height: 35px;
+  width: 100%;
+  color: rgb(255,85,85);
+}
+
+.memory {
+  background-color: rgb(255,178,30,0.1);
+  border-radius: 5px;
+  margin-bottom: 10px;
+  height: 35px;
+  width: 100%;
+  color: rgb(255,178,30);
+}
+
+.verbal {
+  background-color: rgb(3,188,144,0.1);
+  border-radius: 5px;
+  margin-bottom: 10px;
+  height: 35px;
+  width: 100%;
+  color: rgb(3,188,144);
+}
+
+.visual {
+  background-color: rgb(28,47,216,0.1);
+  border-radius: 5px;
+  margin-bottom: 10px;
+  height: 35px;
+  width: 100%;
+  color: rgb(28,47,216);
+}
+
+button {
+  background-color: hsl(224, 30%, 27%);
+  border: 0;
+  border-radius: 15px;
+  height: 30px;
+  width: 100%;
+  color: hsl(0, 0%, 100%);
+  margin-top: 10px;
+}

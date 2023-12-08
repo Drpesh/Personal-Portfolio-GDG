@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  background-color: hsl(204, 43%, 93%);
+  color: hsl(218, 22%, 67%);
+  display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      font-family: Karla;
+}
+
+.main {
+  display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      flex-direction: column;
+      border-radius: 5px;
+      margin: 2em;
+      width: 20em;
+      text-align: left;
+      box-shadow: 5px 5px 20px hsl(218, 22%, 67%);
+}
+
+.white {
+  background-color: white;
+  border-radius: 5px 5px 0 0;
+  padding: 1.5em;
+  width: 18em;
+}
+
+.cyand {
+  background-color: hsl(179, 62%, 43%);
+  padding: 1.5em;
+  width: 18em;
+  color: hsl(204, 43%, 93%);
+}
+
+.cyanl {
+  background-color: hsl(179, 62%, 43%, 0.7);
+  border-radius: 0 0 5px 5px;
+  width: 18em;
+  color: hsl(204, 43%, 93%);
+  padding: 1.5em;
+}
+
+.white > h3 {
+  color: hsl(179, 62%, 43%);
+  margin-bottom: 1em;
+}
+
+h3 {
+  font-weight: 700;
+}
+
+.py {
+  color: hsl(71, 73%, 54%);
+  font-size: 16px;
+}
+
+p {
+  margin: 1em 0;
+  font-size: 13px;
+  font-weight: 300;
+}
+
+.cyand > p > span {
+  font-size: 24px;
+  margin-right: 0.5em;
+  font-weight: 900;
+}
+
+button {
+  background-color: hsl(71, 73%, 54%);
+  width: 18em;
+  height: 3em;
+  border: none;
+  border-radius: 5px;
+  color: hsl(204, 43%, 93%);
+}
+
+@media screen and (min-width: 1024px) {
+  .cyan {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .main{
+    width: 36em;
+    height: 22.8em;
+  }
+
+  .white {
+    width: 36em;
+  }
+
+  .cyand {
+    border-radius: 0 0 0 5px;
+  }
+  .cyanl {
+    border-radius: 0 0 5px 0;
+  }
+}
